@@ -190,21 +190,16 @@ os.makedirs(I0_path,exist_ok=True)
 print( f'CLOSED LOOP: nH={wfs.nHead} | dvc={wfs.device} | t={wfs.t} | ms={len(routine)} | Dr0={wfs.Dr0v} | M={wfs.mod}')
 
 ## Import evolving ATM
-if wfs.seed == 1:
-    atm_path = f'./Experiment/atm_pulpos/Phase_560px_Dr0_30_part_1.mat'
-else:
-    atm_path = f'./atmev/{wfs.seed}/Phase_128Npx_Dr0_30_frq_{wfs.freq}_seed_{wfs.seed}.mat'     
-atm_file = scio.loadmat(atm_path)
-PHI_atm = torch.tensor(atm_file['X_phase']).permute(2,0,1).unsqueeze(1).to(wfs.precision.real)
-PHI_atm = f.resize(PHI_atm,(wfs.nPx,wfs.nPx), antialias=True)
+atm_path = f'./Experiment/atm_pulpos/Phase_nPx128_Dro30_part1.npz'     
+atm_file = np.load(atm_path)
+PHI_atm = torch.tensor( atm_file['X_phase'] ).to(wfs.precision.real)# T[b,1,N,M] already in 128 and with pupil set
 
 # for pupil compact support
 modes = wfs.modes.to('cpu').to(wfs.precision.real)# T[NM,nZ]
 pmodes = torch.linalg.pinv(modes)
-pupilL = (wfs.pupilLogical & (PHI_atm[0,0,...]!=0))
+pupilL = (wfs.pupilLogical)
 pupil = pupilL.to(wfs.precision.real)
 pupilLV = pupilL.flatten()
-PHI_atm *= pupil 
 # compute SNR
 model = FWFS(wfs, device=wfs.device).eval()
 _,Iref = model( model.pwfs.Piston, vNoise=[0,0,0,1]) 
