@@ -12,7 +12,7 @@ Official implementation for "[Generalized Deep Fourier-based Wavefront Sensing](
 - On anaconda prompt (windows) or terminal (linux) create enviroment with the .yml file:
 
 ```
-conda env create -f env.yml -n my_environment
+conda env create -f environment.yml -n my_environment
 conda activate my_environment
 ```
 
