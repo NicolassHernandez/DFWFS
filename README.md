@@ -1,18 +1,10 @@
 # DFWFS
 Official implementation for "[Generalized Deep Fourier-ased Wavefront Sensing](https://preprints.opticaopen.org/articles/preprint/Deep_Optics_Preconditioner_for_Modulation-free_Pyramid_Wavefront_Sensing/23812041)"
 
-![ ](end2end_scheme.png)
+![**(a)**Forward model](figures/Scheme_a.pdf)
 
-# Requirements
+![**(b)**Closed-loop training](figurs/Scheme_b.pdf)
 
-* Python 3.10+
-* Pytorch >=1.10+
-* Numpy
-* Scikit-image
-* Scikit-learn
-* tqdm
-* scipy
-* mpmath
 
 # Installation
 - install anaconda (https://www.anaconda.com/products/distribution)
