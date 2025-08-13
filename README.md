@@ -3,7 +3,7 @@ Official implementation for "[Generalized Deep Fourier-ased Wavefront Sensing](h
 
 ![**(a)**Forward model](figures/Scheme_a.pdf)
 
-![**(b)**Closed-loop training](figurs/Scheme_b.pdf)
+![**(b)**Closed-loop training](figures/Scheme_b.pdf)
 
 
 # Installation
