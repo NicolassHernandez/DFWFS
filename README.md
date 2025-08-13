@@ -2,10 +2,10 @@
 Official implementation for "[Generalized Deep Fourier-ased Wavefront Sensing](https://preprints.opticaopen.org/articles/preprint/Deep_Optics_Preconditioner_for_Modulation-free_Pyramid_Wavefront_Sensing/23812041)"
 
 ![Scheme A](scheme_a.png)  
-**(a)** Optical layout of the system.
+**(a)** Proposed physics informed E2E scheme.
 
 ![Scheme B](scheme_b.png)  
-**(b)** Signal processing workflow.
+**(b)** Dual pass optimization scheme for the E2E model.
 
 # Installation
 - Install anaconda (https://www.anaconda.com/products/distribution)
