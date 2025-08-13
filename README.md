@@ -17,15 +17,15 @@ conda activate my_environment
 ```
 
 # Train
-- In functions/utils there is a function called *select_routine* that contain the training scheme employed. There is a bunch of variables to vary but only three are modified 
+In functions/utils there is a function called *select_routine* that contain the training scheme employed. There is a bunch of variables to vary but only three are modified 
   to obtain the different models: *nH*, *al*, and *init*. *nH* is the number of sides of the prism, where negative values yields zernike wavefront sensor and the special case *nH=-10* is ragazzoni. *al* is the variable that controls the phase amplitude; in the case of prism is the alpha value while for zwfs is the constant shift. To initialize the preconditioner with a given form, use *init* with negative value at the second position: *init=['constant',-4]* to initialize as pyramid.
 
-  Then, execute the following command:
+Then, execute the following command:
 
-  ```
-  python Train.py --nPx 128 --expName my_training --device cuda:0 --routine ns_all
+```
+python Train.py --nPx 128 --expName my_training --device cuda:0 --routine ns_all
 
-  ```
+```
 
 # Reproducing Results
 All the simulated results were obtained with this code. Here we briefly explain how to reproduce each plot.
