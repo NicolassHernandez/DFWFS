@@ -7,7 +7,6 @@ Official implementation for "[Generalized Deep Fourier-ased Wavefront Sensing](h
 ![Scheme B](scheme_b.png)  
 **(b)** Signal processing workflow.
 
-
 # Installation
 - Install anaconda (https://www.anaconda.com/products/distribution)
 - On anaconda prompt (windows) or terminal (linux) create enviroment with the .yml file:
