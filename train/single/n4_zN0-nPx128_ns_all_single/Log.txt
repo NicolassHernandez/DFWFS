@@ -1,0 +1,96 @@
+================== GENERAL PARAMETERS ==================
+
+D              = 3
+nPx            = 128
+samp           = 2
+rooftop        = 0
+fovPx          = 512
+ampCal         = 0.1
+wvl            = 635
+ps             = 3740.0
+expName        = n4_zN0-nPx128_ns_all_single
+pid            = 1897276
+device         = cuda:3
+precision name = single
+evol save      = 1
+command        = Train.py --expName n4_zN0 --device cuda:3 --routine ns_all
+date           = 2025-07-18 20:54:23
+
+
+================== MULTIPLE ROUTINE ==================
+
+~~~~~~~~~~~~~~~~~ ROUTINE 0 ~~~~~~~~~~~~~~~~~
+----------- Train/Test 0 -----------
+
+mInorm       = 1
+alpha        = 3
+nHead        = 4
+init         = constant, 0
+nnModel      = GcVit
+epoch        = 100
+lr           = 0.002, 0.0002
+dlr          = 0.8, 0.8
+batch        = 10
+nData        = [40000 10000]
+ab           = 1, 1
+Dr0          = 10, 100
+fp           = (0, 2), (0, 1)
+cost         = std
+cl           = 2, 1
+vNoise       = 0, 0, 0, 1
+zModes       = 2, 200
+crop         = False
+norm_nn      = zscore
+fine tunning = 
+nRr          = True
+
+~~~~~~~~~~~~~~~~~ ROUTINE 1 ~~~~~~~~~~~~~~~~~
+----------- Train/Test 0 -----------
+
+mInorm       = 1
+alpha        = 3
+nHead        = 4
+init         = constant, 0
+nnModel      = GcVit
+epoch        = 100
+lr           = 0.002, 0.0002
+dlr          = 0.8, 0.8
+batch        = 10
+nData        = [40000 10000]
+ab           = 1, 1
+Dr0          = 10, 100
+fp           = (0, 0), (0, 1)
+cost         = std
+cl           = 2, 1
+vNoise       = 0, 0, 0, 1
+zModes       = 2, 200
+crop         = False
+norm_nn      = zscore
+fine tunning = 
+nRr          = True
+
+~~~~~~~~~~~~~~~~~ ROUTINE 2 ~~~~~~~~~~~~~~~~~
+----------- Train/Test 0 -----------
+
+mInorm       = 1
+alpha        = 3
+nHead        = 4
+init         = constant, 0
+nnModel      = GcVit
+epoch        = 100
+lr           = 0.002, 0.0002
+dlr          = 0.8, 0.8
+batch        = 10
+nData        = [40000 10000]
+ab           = 1, 1
+Dr0          = 10, 100
+fp           = (0, 1), (0, 0)
+cost         = std
+cl           = 2, 1
+vNoise       = 0, 0, 0, 1
+zModes       = 2, 200
+crop         = False
+norm_nn      = zscore
+fine tunning = 
+nRr          = True
+
