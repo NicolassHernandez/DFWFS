@@ -1,9 +1,11 @@
 # DFWFS
 Official implementation for "[Generalized Deep Fourier-ased Wavefront Sensing](https://preprints.opticaopen.org/articles/preprint/Deep_Optics_Preconditioner_for_Modulation-free_Pyramid_Wavefront_Sensing/23812041)"
 
-![](scheme_a.png)
+![Scheme A](scheme_a.png)  
+**(a)** Optical layout of the system.
 
-![](scheme_b.png)
+![Scheme B](scheme_b.png)  
+**(b)** Signal processing workflow.
 
 
 # Installation
