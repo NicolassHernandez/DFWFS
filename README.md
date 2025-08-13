@@ -1,5 +1,5 @@
 # DFWFS
-Official implementation for "[Generalized Deep Fourier-ased Wavefront Sensing](https://preprints.opticaopen.org/articles/preprint/Deep_Optics_Preconditioner_for_Modulation-free_Pyramid_Wavefront_Sensing/23812041)"
+Official implementation for "[Generalized Deep Fourier-based Wavefront Sensing](https://preprints.opticaopen.org/articles/preprint/Deep_Optics_Preconditioner_for_Modulation-free_Pyramid_Wavefront_Sensing/23812041)"
 
 ![Scheme A](scheme_a.png)  
 **(a)** Proposed physics informed E2E scheme.
