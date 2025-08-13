@@ -1,11 +1,11 @@
-# End2EndPyrWFS
-Official implementation for "[Deep Optics Preconditioner for Modulation-free Pyramid Wavefront Sensing](https://preprints.opticaopen.org/articles/preprint/Deep_Optics_Preconditioner_for_Modulation-free_Pyramid_Wavefront_Sensing/23812041)"
+# DFWFS
+Official implementation for "[Generalized Deep Fourier-ased Wavefront Sensing](https://preprints.opticaopen.org/articles/preprint/Deep_Optics_Preconditioner_for_Modulation-free_Pyramid_Wavefront_Sensing/23812041)"
 
 ![ ](end2end_scheme.png)
 
 # Requirements
 
-* Python 3.9
+* Python 3.10+
 * Pytorch >=1.10+
 * Numpy
 * Scikit-image
@@ -13,7 +13,6 @@ Official implementation for "[Deep Optics Preconditioner for Modulation-free Pyr
 * tqdm
 * scipy
 * mpmath
-* tensorboard
 
 # Installation
 - install anaconda (https://www.anaconda.com/products/distribution)
