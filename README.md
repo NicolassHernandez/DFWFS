@@ -1,9 +1,9 @@
 # DFWFS
 Official implementation for "[Generalized Deep Fourier-ased Wavefront Sensing](https://preprints.opticaopen.org/articles/preprint/Deep_Optics_Preconditioner_for_Modulation-free_Pyramid_Wavefront_Sensing/23812041)"
 
-![**(a)**Forward model](figures/Scheme_a.pdf)
+![](figures/Scheme_a.pdf)
 
-![**(b)**Closed-loop training](figures/Scheme_b.pdf)
+![](figures/Scheme_b.pdf)
 
 
 # Installation
