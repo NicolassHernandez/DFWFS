@@ -17,7 +17,7 @@ conda activate my_environment
 ```
 
 # Train
-In functions/utils there is a function called *select_routine* that contain the training scheme employed. There is a bunch of variables to vary but only three are modified 
+In functions/utils there is a function called *select_routine* that contains the training scheme employed. There is a bunch of variables to vary but only three are modified 
   to obtain the different models: *nH*, *al*, and *init*. *nH* is the number of sides of the prism, where negative values yields zernike wavefront sensor and the special case *nH=-10* is ragazzoni. *al* is the variable that controls the phase amplitude; in the case of prism is the alpha value while for zwfs is the constant shift. To initialize the preconditioner with a given form, use *init* with negative value at the second position: *init=['constant',-4]* to initialize as pyramid.
 
 Then, execute the following command:
@@ -31,7 +31,7 @@ python Train.py --nPx 128 --expName my_training --device cuda:0 --routine ns_all
 All the simulated results were obtained with this code. Here we briefly explain how to reproduce each plot.
 
 ## Open-loop
-Open-loop results are obtained through the below commands, where *T* is the ammount of atmosphere averaged per point.
+Open-loop results are obtained through the below commands, where *T* is the amount of atmosphere averaged per point.
 
 ```
 python3 test_ol.py --expName P_vNT0 --device cuda:0 --routine P_vNM0 --T 10000 --batch 100 --nHeads 2 3 4
@@ -53,13 +53,13 @@ In this case, *t* is the iterations, *cl* the kth-iteration where the loop is cl
 If you find our project useful, please cite us:
 
 ```
-@article{guzman2024deep,
-  title={Deep optics preconditioner for modulation-free pyramid wavefront sensing},
-  author={Guzm{\'a}n, Felipe and Tapia, Jorge and Weinberger, Camilo and Hern{\'a}ndez, Nicol{\'a}s and Bacca, Jorge and Neichel, Benoit and Vera, Esteban},
-  journal={Photonics Research},
+@article{hernandez2025Generalized,
+  title={Generalized Deep Fourier-based Wavefront Sensing},
+  author={ Hernandez, Nicolas and Guzman, Felipe and Gonzalez, Benjamin and Vera, Esteban},
+  journal={Advanced Photonics},
   volume={12},
   number={2},
   pages={301--312},
-  year={2024},
-  publisher={Optica Publishing Group}
+  year={2025},
+  publisher={SPIE}
 }
